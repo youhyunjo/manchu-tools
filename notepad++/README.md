@@ -53,8 +53,8 @@ Notepad++ 에디터에 대한 자세한 정보를 얻고 싶다면 홈페이지 
 만주어 사전 검색 기능
 --------------------------------
 
-* 만영 사전 파일: [Manchu-English.txt](/files/manchu/notepad++/Manchu-English.txt)
-* 사전 검색 스크립트: [manchu-dic.py](/files/manchu/notepad++/manchu-dic.py)
+* 만영 사전 파일: [Manchu-English.txt](PythonScripts/Manchu-English.txt)
+* 사전 검색 스크립트: [manchu-dic.py](PythonScripts/manchu-dic.py)
 
 ### 설치 
 

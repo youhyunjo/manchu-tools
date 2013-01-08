@@ -6,7 +6,8 @@
 
 * 만주어 기본 문자표
 * 만문 특수문자 로마자 표기법 
-
+* (MANCHU COMMA 유니코드: U+1808)는 쉼표(,)로
+* (MANCHU FULL STOP 유니코드: U+1809)는 마침표(.)로 
 * 만주문 기본 전사법 : x, v 사용
 * 만문특수문자 표기법 : [pdf](/files/manchu/manchu-special-characters-simple.pdf)
 * n 옆에 점이 찍힌 것은 n'으로

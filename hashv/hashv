@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+# 
+# hashv - command line tools for Manchu Digital Library Project
+#
+#import os
+#import warnings
+
+import argparse
+import sys
+
+def help(args):
+    print("help: " + args.command)
+
+def split(args):
+    print("split: " + args.filename )
+
+def convert(args):
+    print("convert: " + args.filename + " from " + args.f + " into " + args.t)
+
+if __name__ == '__main__':
+   parser = argparse.ArgumentParser(prog='hashv')
+   parser.add_argument('--gopt', action='store_true', help='global option')
+   subparsers = parser.add_subparsers(title='commands')
+
+   parser_help = subparsers.add_parser('help', help='help')
+   parser_help.add_argument('command', help='help command')
+   parser_help.set_defaults(func=help)
+
+   parser_split = subparsers.add_parser('split', help='split files')
+#   parser_split.add_argument('filename', type=argparse.FileType('r'),
+#   					 help='filename')
+   parser_split.add_argument('filename', help='filename')
+   parser_split.set_defaults(func=split)
+
+   parser_convert = subparsers.add_parser('convert', help='convert file format')
+   parser_convert.add_argument('-f', choices=['lf','pf'], help='source format')
+   parser_convert.add_argument('-t', choices=['lf', 'pf', 'xml'], help='target format')
+   parser_convert.add_argument('filename', help='source filename')
+   parser_convert.set_defaults(func=convert)
+
+
+   args = parser.parse_args()
+   args.func(args)
+

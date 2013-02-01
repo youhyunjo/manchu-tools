@@ -17,19 +17,24 @@ PythonScript 설치
 추가 기능 목록
 --------------------------------
 
-* 만영 사전 검색: [manchu-dic.py](manchu-dic.py), [Manchu-English.txt](Manchu-English.txt)
+* 만주 관리자: [manchu-manager.py](manchu-manager.py)
+* 만영 사전 검색: [manchu-dic.py](manchu-dic.py). 사전 파일은 저작권 문제로 공개하지 않습니다.
 * 만한 정렬 형식 검사: [manchu-validate-align.py](manchu-validate-align.py)
+
 
 설치 방법
 --------------------------------
 
-여기서 제공되는 모든 파일을 다운로드 받아 Notepad++ Python Script 폴더에 넣기만 하면 됩니다. 만주어 사전 기능을 예로 들어 설명하겠습니다.
+만주 관리자 `manchu-manager.py`를 다운받아 Notepad++ Python Script 폴더에
+넣으시면 됩니다. 다른 추가 기능들은 만주 관리자를 통해 자동으로 설치하고
+업데이트할 수 있습니다.
 
 ### 다운로드
 
-* 위 목록에서 다운로드 하고 싶은 파일을 클릭하세요.
-* 파일 내용 오른쪽 상단에 보면 Raw라는 버튼이 있습니다. 
-* 이 버튼을 이용해 최신 파일을 다운로드 받으세요.
+다음 링크를 이용하여 `manchu-manager.py`를 다운로드합니다.
+
+* [manchu-manager.py](https://raw.github.com/youhyunjo/manchu-tools/master/notepad++/PythonScripts/manchu-manager.py)
+
 
 ### 설치할 폴더 찾기
 
@@ -39,15 +44,21 @@ PythonScript 설치
 
 ### 파일 넣고 Notepad++ 재실행
 
-* `manchu-dic.py`와 `Manchu-English.txt`를 다운로드받아 위 폴더에 넣으세요.
+* 다운로드 받은 `manchu-manager.py`를 폴더에 넣으세요.
 * Notepad++을 재실행하세요.
-* 메뉴에서 "플러그인 > Python Script > Scripts"에 들어가 보시면 복사해서 넣은 `manchu-dic`이 추가된 것을 보실 수 있습니다.
-* 해당 이름을 클릭하시면 실행됩니다.
+* 메뉴에서 "플러그인 > Python Script > Scripts"에 들어가 보시면 복사해서 넣은 `manchu-manager`가 추가된 것을 보실 수 있습니다.
+
+### 만주 매니저 실행
+
+* `manchu-manger`를 실행하시면 자동으로 새로운 플러그인, Asepll 만주어 사전 등이 설치되고 업그레이드됩니다.
+* 설치가 완료되었다는 팝업창이 뜰 때까지 기다리세요.
+* 경우에 따라 새로운 기능은 Notepad++을 재실행한 후에 사용할 수 있습니다.
+
 
 단축키 설정
 --------------------------------
 
-매번 마우스로 클릭하여 실행하는 것이 불편할 경우에는 단축키를 설정할 수
+플러그인을 매번 마우스로 클릭하여 실행하는 것이 불편할 경우에는 단축키를 설정할 수
 있습니다. `manchu-dic.py`를 예로 들어 설명하겠습니다.
 
 

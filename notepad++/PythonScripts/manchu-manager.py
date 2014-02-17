@@ -112,19 +112,19 @@ class AspellManager(Manager):
 
 console.clear()
 
-# Aspell Manchu		
-aspell_baseurl = "http://manchu.snu.ac.kr/files/manchu/aspell-manchu/"
-aspell_local_path = "C:/Program Files/Aspell/lib/aspell-0.60"
-am = AspellManager(aspell_baseurl, aspell_local_path, "manchu.md5sums")
-am.update()
-am.upgrade()
-
 #notepad.runPluginCommand('Python Script', 'Show Console')
 plugin_baseurl = "https://raw.github.com/youhyunjo/manchu-tools/master/notepad++/PythonScripts/"
 plugin_local_path = os.path.dirname(__file__)
 pm = PluginManager(plugin_baseurl, plugin_local_path)
 pm.update()
 pm.upgrade()
+
+# Aspell Manchu		
+aspell_baseurl = "http://manchu.cld-korea.org/manchu/aspell-manchu/"
+aspell_local_path = "C:/Program Files/Aspell/lib/aspell-0.60"
+am = AspellManager(aspell_baseurl, aspell_local_path, "manchu.md5sums")
+am.update()
+am.upgrade()
 
 
 #console.clear()
